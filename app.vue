@@ -1,5 +1,18 @@
+<script setup>
+  useHead({
+    titleTemplate: (title) => {
+      return title ? `${title} - Kari Naga` : 'Kari Naga'
+    },
+    htmlAttrs: {
+      lang: 'en',
+    },
+  })
+</script>
+
 <template>
-  <div>
-    <NuxtWelcome />
+  <div class="flex flex-col justify-center items-center">
+    <Header />
+    <NuxtPage />
+    <Footer />
   </div>
 </template>

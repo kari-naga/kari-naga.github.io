@@ -5,18 +5,13 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "lint": "eslint --ext .js,.ts --ignore-path .eslintignore ."
+    "lint": "eslint --ext .js,.ts --ignore-path .eslintignore .",
+    "upload": "gh-pages -d dist --dotfiles",
+    "deploy": "nuxt generate && gh-pages -d dist --dotfiles"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^5.1.3",
-    "nuxt": "3.0.0-rc.4",
-    "push-dir": "^0.4.1"
-  },
-  "dependencies": {
-    "@fortawesome/free-brands-svg-icons": "^6.1.1",
-    "@fortawesome/free-regular-svg-icons": "^6.1.1",
-    "@fortawesome/free-solid-svg-icons": "^6.1.1",
-    "@nuxtjs/fontawesome": "^1.1.2",
+    "@tailwindcss/typography": "^0.5.2",
     "@typescript-eslint/eslint-plugin": "^5.30.3",
     "@typescript-eslint/parser": "^5.30.3",
     "@vue/eslint-config-standard": "^7.0.0",
@@ -24,6 +19,9 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-nuxt": "^3.2.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-vue": "^9.1.1"
+    "eslint-plugin-vue": "^9.1.1",
+    "gh-pages": "^4.0.0",
+    "nuxt": "3.0.0-rc.4",
+    "unplugin-icons": "^0.14.7"
   }
 }
