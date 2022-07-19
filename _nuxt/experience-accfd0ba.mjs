@@ -1,1 +1,0 @@
-import{_ as o}from"./Content-ec2c27fe.mjs";import{a as n,b as s,o as a,c,w as r,e as _}from"./entry-72d6138c.mjs";const p=_("p",null," Work In Progress ",-1),d=n({__name:"experience",setup(i){const e="Experience";return s({title:e}),(m,f)=>{const t=o;return a(),c(t,{title:e},{default:r(()=>[p]),_:1})}}});export{d as default};

@@ -1,0 +1,1 @@
+import{a as s,o,f as a,e as n,t as r,r as c}from"./entry-09e43391.mjs";const l={class:"p-4 flex flex-col items-center gap-4 text-center"},i={class:"text-3xl font-semibold tracking-wide"},d=s({__name:"Content",props:["title"],setup(e){return(t,p)=>(o(),a("div",l,[n("h1",i,r(e.title),1),c(t.$slots,"default")]))}});export{d as _};
