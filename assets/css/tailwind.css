@@ -1,0 +1,16 @@
+@import "@fontsource/montserrat/variable.css";
+@import "@fontsource/montserrat/variable-italic.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page-enter-active,
+.page-leave-active {
+  @apply transition-opacity duration-200 ease-in-out;
+}
+
+.page-enter-from,
+.page-leave-to {
+  @apply opacity-0;
+}

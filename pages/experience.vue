@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  const title = 'Projects'
+  const title = 'Experience'
   useHead({
     title,
   })
