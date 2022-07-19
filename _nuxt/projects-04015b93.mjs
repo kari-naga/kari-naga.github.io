@@ -1,1 +1,0 @@
-import{_ as s,u as o,o as c,c as _}from"./entry-48bc4645.mjs";const a={__name:"projects",setup(r,{expose:t}){t(),o({title:"Projects"});const e={};return Object.defineProperty(e,"__isScriptSetup",{enumerable:!1,value:!0}),e}};function n(r,t,e,p,u,l){return c(),_("div",null," Projects ")}var d=s(a,[["render",n]]);export{d as default};
