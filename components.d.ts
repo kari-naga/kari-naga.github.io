@@ -8,7 +8,6 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     IBiGithub: typeof import('~icons/bi/github')['default']
-    IBiLightning: typeof import('~icons/bi/lightning')['default']
     IBiLinkedin: typeof import('~icons/bi/linkedin')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

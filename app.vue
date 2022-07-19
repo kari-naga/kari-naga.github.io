@@ -7,12 +7,20 @@
       lang: 'en',
     },
   })
+  const pageStyle = reactive({
+    marginTop: '0px',
+    marginBottom: '0px',
+  })
+  const ready = ref(false)
+  onMounted(() => {
+    ready.value = true
+  })
 </script>
 
 <template>
-  <div class="min-h-screen flex flex-col justify-center items-center font-montserrat">
-    <Header class="shrink-0" />
-    <NuxtPage class="flex-grow p-4" />
-    <Footer class="shrink-0" />
+  <div class="font-montserrat">
+    <Header @set-height="height => pageStyle.marginTop = height + 'px'" />
+    <NuxtPage v-if="ready" :style="pageStyle" />
+    <Footer @set-height="height => pageStyle.marginBottom = height + 'px'" />
   </div>
 </template>

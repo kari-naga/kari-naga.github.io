@@ -23,4 +23,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
   ],
+  css: [
+    '@fontsource/montserrat/variable.css',
+    '@fontsource/montserrat/variable-italic.css',
+  ]
 })

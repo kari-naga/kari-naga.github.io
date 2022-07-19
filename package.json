@@ -2,14 +2,16 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev -o",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "genpreview": "nuxt generate && nuxt preview",
     "lint": "eslint --ext .js,.ts --ignore-path .eslintignore .",
     "upload": "gh-pages -d dist --dotfiles",
     "deploy": "nuxt generate && gh-pages -d dist --dotfiles"
   },
   "devDependencies": {
+    "@fontsource/montserrat": "^4.5.11",
     "@iconify-json/bi": "^1.1.6",
     "@nuxtjs/tailwindcss": "^5.3.0",
     "@tailwindcss/typography": "^0.5.4",
@@ -25,8 +27,5 @@
     "nuxt": "3.0.0-rc.6",
     "unplugin-icons": "^0.14.7",
     "unplugin-vue-components": "^0.21.1"
-  },
-  "dependencies": {
-    "@fontsource/montserrat": "^4.5.11"
   }
 }
