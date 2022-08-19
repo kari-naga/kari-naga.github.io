@@ -1,15 +1,23 @@
 {
-  "node_modules/@fontsource/montserrat/files/montserrat-cyrillic-ext-variable-wghtOnly-normal.woff2": {
-    "file": "_nuxt/montserrat-cyrillic-ext-variable-wghtOnly-normal.3fef5946.woff2",
-    "src": "node_modules/@fontsource/montserrat/files/montserrat-cyrillic-ext-variable-wghtOnly-normal.woff2"
+  "node_modules/@fontsource/montserrat/files/montserrat-cyrillic-variable-wghtOnly-normal.woff2": {
+    "file": "_nuxt/montserrat-cyrillic-variable-wghtOnly-normal.a8447cde.woff2",
+    "src": "node_modules/@fontsource/montserrat/files/montserrat-cyrillic-variable-wghtOnly-normal.woff2"
+  },
+  "node_modules/@fontsource/montserrat/files/montserrat-latin-ext-variable-wghtOnly-normal.woff2": {
+    "file": "_nuxt/montserrat-latin-ext-variable-wghtOnly-normal.cffe1393.woff2",
+    "src": "node_modules/@fontsource/montserrat/files/montserrat-latin-ext-variable-wghtOnly-normal.woff2"
   },
   "node_modules/@fontsource/montserrat/files/montserrat-latin-variable-wghtOnly-normal.woff2": {
     "file": "_nuxt/montserrat-latin-variable-wghtOnly-normal.ae919a7c.woff2",
     "src": "node_modules/@fontsource/montserrat/files/montserrat-latin-variable-wghtOnly-normal.woff2"
   },
-  "node_modules/@fontsource/montserrat/files/montserrat-cyrillic-variable-wghtOnly-normal.woff2": {
-    "file": "_nuxt/montserrat-cyrillic-variable-wghtOnly-normal.a8447cde.woff2",
-    "src": "node_modules/@fontsource/montserrat/files/montserrat-cyrillic-variable-wghtOnly-normal.woff2"
+  "node_modules/@fontsource/montserrat/files/montserrat-cyrillic-ext-variable-wghtOnly-normal.woff2": {
+    "file": "_nuxt/montserrat-cyrillic-ext-variable-wghtOnly-normal.3fef5946.woff2",
+    "src": "node_modules/@fontsource/montserrat/files/montserrat-cyrillic-ext-variable-wghtOnly-normal.woff2"
+  },
+  "node_modules/@fontsource/montserrat/files/montserrat-cyrillic-ext-variable-wghtOnly-italic.woff2": {
+    "file": "_nuxt/montserrat-cyrillic-ext-variable-wghtOnly-italic.15d402e4.woff2",
+    "src": "node_modules/@fontsource/montserrat/files/montserrat-cyrillic-ext-variable-wghtOnly-italic.woff2"
   },
   "node_modules/@fontsource/montserrat/files/montserrat-cyrillic-variable-wghtOnly-italic.woff2": {
     "file": "_nuxt/montserrat-cyrillic-variable-wghtOnly-italic.8a7e993e.woff2",
@@ -19,14 +27,6 @@
     "file": "_nuxt/montserrat-vietnamese-variable-wghtOnly-normal.56544b89.woff2",
     "src": "node_modules/@fontsource/montserrat/files/montserrat-vietnamese-variable-wghtOnly-normal.woff2"
   },
-  "node_modules/@fontsource/montserrat/files/montserrat-cyrillic-ext-variable-wghtOnly-italic.woff2": {
-    "file": "_nuxt/montserrat-cyrillic-ext-variable-wghtOnly-italic.15d402e4.woff2",
-    "src": "node_modules/@fontsource/montserrat/files/montserrat-cyrillic-ext-variable-wghtOnly-italic.woff2"
-  },
-  "node_modules/@fontsource/montserrat/files/montserrat-latin-variable-wghtOnly-italic.woff2": {
-    "file": "_nuxt/montserrat-latin-variable-wghtOnly-italic.33befdbb.woff2",
-    "src": "node_modules/@fontsource/montserrat/files/montserrat-latin-variable-wghtOnly-italic.woff2"
-  },
   "node_modules/@fontsource/montserrat/files/montserrat-vietnamese-variable-wghtOnly-italic.woff2": {
     "file": "_nuxt/montserrat-vietnamese-variable-wghtOnly-italic.a48afdb0.woff2",
     "src": "node_modules/@fontsource/montserrat/files/montserrat-vietnamese-variable-wghtOnly-italic.woff2"
@@ -35,21 +35,21 @@
     "file": "_nuxt/montserrat-latin-ext-variable-wghtOnly-italic.9df5f242.woff2",
     "src": "node_modules/@fontsource/montserrat/files/montserrat-latin-ext-variable-wghtOnly-italic.woff2"
   },
-  "node_modules/@fontsource/montserrat/files/montserrat-latin-ext-variable-wghtOnly-normal.woff2": {
-    "file": "_nuxt/montserrat-latin-ext-variable-wghtOnly-normal.cffe1393.woff2",
-    "src": "node_modules/@fontsource/montserrat/files/montserrat-latin-ext-variable-wghtOnly-normal.woff2"
+  "node_modules/@fontsource/montserrat/files/montserrat-latin-variable-wghtOnly-italic.woff2": {
+    "file": "_nuxt/montserrat-latin-variable-wghtOnly-italic.33befdbb.woff2",
+    "src": "node_modules/@fontsource/montserrat/files/montserrat-latin-variable-wghtOnly-italic.woff2"
   },
   "assets/img/profile.jpg": {
     "file": "_nuxt/profile.ad22bd34.jpg",
     "src": "assets/img/profile.jpg"
   },
-  "assets/img/gocallink-fullui.jpeg": {
-    "file": "_nuxt/gocallink-fullui.9926256b.jpeg",
-    "src": "assets/img/gocallink-fullui.jpeg"
-  },
   "assets/img/synthszr.png": {
     "file": "_nuxt/synthszr.acde00c0.png",
     "src": "assets/img/synthszr.png"
+  },
+  "assets/img/gocallink-fullui.jpeg": {
+    "file": "_nuxt/gocallink-fullui.9926256b.jpeg",
+    "src": "assets/img/gocallink-fullui.jpeg"
   },
   "assets/img/hlreport-m-4.jpeg": {
     "file": "_nuxt/hlreport-m-4.8203ef75.jpeg",
@@ -60,7 +60,7 @@
     "src": "assets/img/maav-website.png"
   },
   "node_modules/nuxt/dist/app/entry.mjs": {
-    "file": "_nuxt/entry.7b13b1d7.mjs",
+    "file": "_nuxt/entry.b8fc773e.mjs",
     "src": "node_modules/nuxt/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
@@ -86,7 +86,7 @@
     ]
   },
   "virtual:nuxt:C:/Users/Kari/OneDrive/Coding/Web/personal-site/.nuxt/error-component.mjs": {
-    "file": "_nuxt/error-component.675e5de8.mjs",
+    "file": "_nuxt/error-component.c1cd631c.mjs",
     "src": "virtual:nuxt:C:/Users/Kari/OneDrive/Coding/Web/personal-site/.nuxt/error-component.mjs",
     "isDynamicEntry": true,
     "imports": [
@@ -98,13 +98,13 @@
     ]
   },
   "pages/experience.vue": {
-    "file": "_nuxt/experience.7c520b37.mjs",
+    "file": "_nuxt/experience.92806bac.mjs",
     "src": "pages/experience.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs",
-      "_Link.vue_vue_type_script_setup_true_lang.c60e386e.mjs",
-      "_Content.vue_vue_type_script_setup_true_lang.d4052ac8.mjs"
+      "_Link.vue_vue_type_script_setup_true_lang.89206db9.mjs",
+      "_Content.vue_vue_type_script_setup_true_lang.8695a01e.mjs"
     ],
     "assets": [
       "_nuxt/gocallink-fullui.9926256b.jpeg",
@@ -112,24 +112,24 @@
       "_nuxt/maav-website.07a144a0.png"
     ]
   },
-  "_Link.vue_vue_type_script_setup_true_lang.c60e386e.mjs": {
-    "file": "_nuxt/Link.vue_vue_type_script_setup_true_lang.c60e386e.mjs",
+  "_Link.vue_vue_type_script_setup_true_lang.89206db9.mjs": {
+    "file": "_nuxt/Link.vue_vue_type_script_setup_true_lang.89206db9.mjs",
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
   },
-  "_Content.vue_vue_type_script_setup_true_lang.d4052ac8.mjs": {
-    "file": "_nuxt/Content.vue_vue_type_script_setup_true_lang.d4052ac8.mjs",
+  "_Content.vue_vue_type_script_setup_true_lang.8695a01e.mjs": {
+    "file": "_nuxt/Content.vue_vue_type_script_setup_true_lang.8695a01e.mjs",
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
   },
   "pages/index.vue": {
-    "file": "_nuxt/index.efbcc101.mjs",
+    "file": "_nuxt/index.827ffbde.mjs",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_Content.vue_vue_type_script_setup_true_lang.d4052ac8.mjs",
+      "_Content.vue_vue_type_script_setup_true_lang.8695a01e.mjs",
       "node_modules/nuxt/dist/app/entry.mjs",
       "__plugin-vue_export-helper.7287ed4b.mjs"
     ],
@@ -141,12 +141,12 @@
     "file": "_nuxt/_plugin-vue_export-helper.7287ed4b.mjs"
   },
   "pages/projects.vue": {
-    "file": "_nuxt/projects.007af262.mjs",
+    "file": "_nuxt/projects.1459b9ed.mjs",
     "src": "pages/projects.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_Link.vue_vue_type_script_setup_true_lang.c60e386e.mjs",
-      "_Content.vue_vue_type_script_setup_true_lang.d4052ac8.mjs",
+      "_Link.vue_vue_type_script_setup_true_lang.89206db9.mjs",
+      "_Content.vue_vue_type_script_setup_true_lang.8695a01e.mjs",
       "node_modules/nuxt/dist/app/entry.mjs"
     ],
     "assets": [
@@ -154,7 +154,7 @@
     ]
   },
   "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue": {
-    "file": "_nuxt/error-404.0d3658fe.mjs",
+    "file": "_nuxt/error-404.68fd970d.mjs",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -166,7 +166,7 @@
     ]
   },
   "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue": {
-    "file": "_nuxt/error-500.be5057a3.mjs",
+    "file": "_nuxt/error-500.182e18ce.mjs",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -181,12 +181,12 @@
     "file": "_nuxt/error-500.08851880.css",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-500.css"
   },
-  "node_modules/@nuxt/ui-templates/dist/templates/error-404.css": {
-    "file": "_nuxt/error-404.7729cee9.css",
-    "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.css"
-  },
   "node_modules/nuxt/dist/app/entry.css": {
     "file": "_nuxt/entry.f6fa2434.css",
     "src": "node_modules/nuxt/dist/app/entry.css"
+  },
+  "node_modules/@nuxt/ui-templates/dist/templates/error-404.css": {
+    "file": "_nuxt/error-404.7729cee9.css",
+    "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.css"
   }
 }
