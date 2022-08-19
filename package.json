@@ -11,21 +11,21 @@
     "deploy": "nuxt generate && gh-pages -d dist --dotfiles"
   },
   "devDependencies": {
-    "@fontsource/montserrat": "^4.5.11",
+    "@fontsource/montserrat": "^4.5.12",
     "@iconify-json/bi": "^1.1.6",
-    "@nuxtjs/tailwindcss": "^5.3.0",
+    "@nuxtjs/tailwindcss": "^5.3.2",
     "@tailwindcss/typography": "^0.5.4",
-    "@typescript-eslint/eslint-plugin": "^5.30.7",
-    "@typescript-eslint/parser": "^5.30.7",
-    "@vue/eslint-config-standard": "^7.0.0",
-    "eslint": "^8.20.0",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1",
+    "@vue/eslint-config-standard": "^8.0.1",
+    "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-nuxt": "^3.2.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-vue": "^9.2.0",
+    "eslint-plugin-vue": "^9.3.0",
     "gh-pages": "^4.0.0",
-    "nuxt": "3.0.0-rc.6",
-    "unplugin-icons": "^0.14.7",
-    "unplugin-vue-components": "^0.21.1"
+    "nuxt": "3.0.0-rc.8",
+    "unplugin-icons": "^0.14.8",
+    "unplugin-vue-components": "^0.21.2"
   }
 }
