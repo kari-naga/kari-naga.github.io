@@ -19,6 +19,7 @@
 
 <template>
   <div class="font-montserrat">
+    <NuxtLoadingIndicator />
     <Header @set-height="height => pageStyle.marginTop = height + 'px'" />
     <NuxtPage v-if="ready" :style="pageStyle" />
     <Footer @set-height="height => pageStyle.marginBottom = height + 'px'" />

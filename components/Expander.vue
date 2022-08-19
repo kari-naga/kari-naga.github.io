@@ -21,23 +21,24 @@
     }
   })
   const show = ref(false)
-  watch(show, () => {
-    if (show.value) {
-      emit('open', content.value.clientHeight)
-    } else {
-      emit('close', content.value.clientHeight)
-    }
-  })
   const content = ref(null)
   const height = ref(0)
-  onMounted(() => {
+  onMounted(() => setTimeout(() => {
     height.value = content.value.clientHeight
-  })
-  const style = computed(() => {
-    if (!show.value) {
-      return { height: '0px', }
+  }, 210))
+  function toggleShow() {
+    show.value = !show.value
+    if (show.value) {
+      emit('open', height.value)
+    } else {
+      emit('close', height.value)
     }
-    return { height: `${height.value + props.heightMod}px`, }
+  }
+  const style = computed(() => {
+    if (show.value) {
+      return { height: `${height.value + props.heightMod}px`, }
+    }
+    return { height: '0px', }
   })
 </script>
 
@@ -45,7 +46,7 @@
   <div>
     <div :class="headerClass">
       <slot name="header" />
-      <IconButton title="Toggle Details" class="flex justify-center items-center gap-1" :class="dropdownClass" @click="show = !show">
+      <IconButton title="Toggle Details" class="flex justify-center items-center gap-1" :class="dropdownClass" @click="toggleShow">
         <slot name="label" />
         <i-bi-caret-down class="transition-transform duration-300" :class="buttonClass" />
       </IconButton>

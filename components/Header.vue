@@ -7,9 +7,9 @@
 </script>
 
 <template>
-  <nav class="fixed top-0 w-full p-3 flex justify-center items-center gap-4 bg-slate-100" ref="header">
+  <nav class="fixed z-40 top-0 w-full p-3 flex justify-center items-center gap-4 bg-slate-100" ref="header">
     <NavButton to="/">Home</NavButton>
-    <NavButton to="/experience">Experience</NavButton>
-    <NavButton to="/projects">Projects</NavButton>
+    <NavButton to="/experience/">Experience</NavButton>
+    <NavButton to="/projects/">Projects</NavButton>
   </nav>
 </template>

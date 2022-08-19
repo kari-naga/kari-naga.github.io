@@ -7,7 +7,7 @@
 </script>
 
 <template>
-  <footer class="fixed bottom-0 w-full p-3 flex justify-center gap-4 bg-slate-100" ref="footer">
+  <footer class="fixed z-40 bottom-0 w-full p-3 flex justify-center gap-4 bg-slate-100" ref="footer">
     <IconLink to="https://github.com/kari-naga" title="Github">
       <i-bi-github />
     </IconLink>
