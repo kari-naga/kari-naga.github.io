@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <main class="p-4 flex flex-col items-center gap-4 text-center">
+  <main class="py-4 px-7 flex flex-col items-center gap-4 text-center">
     <h1 class="text-3xl font-semibold tracking-wide">
       {{ title }}
     </h1>
