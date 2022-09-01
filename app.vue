@@ -12,12 +12,6 @@
         content: 'Kari Naga\'s Portfolio',
       },
     ],
-    link: [
-      {
-        rel: 'manifest',
-        href: 'web-manifest.json'
-      },
-    ],
     script: [
       {
         src: 'https://www.googletagmanager.com/gtag/js?id=G-HDM3HDL28B',
