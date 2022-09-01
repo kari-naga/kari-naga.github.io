@@ -6,6 +6,30 @@
     htmlAttrs: {
       lang: 'en',
     },
+    meta: [
+      {
+        name: 'description',
+        content: 'Kari Naga\'s Portfolio',
+      },
+    ],
+    link: [
+      {
+        rel: 'manifest',
+        href: 'web-manifest.json'
+      },
+    ],
+    script: [
+      {
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-HDM3HDL28B',
+        async: true,
+      },
+      {
+        children: 'window.dataLayer = window.dataLayer || [];\n' +
+                  'function gtag(){dataLayer.push(arguments);}\n' +
+                  'gtag(\'js\', new Date());\n' +
+                  'gtag(\'config\', \'G-HDM3HDL28B\');',
+      },
+    ],
   })
   const pageStyle = reactive({
     marginTop: '0px',

@@ -3,7 +3,7 @@
     <h2 class="text-xl">
       Computer Engineering Student at the University of Michigan
     </h2>
-    <img src="~/assets/img/profile.jpg" alt="Profile Picture" class="max-w-[10rem] h-auto rounded-full" width="1165" height="1165">
+    <img src="profile.jpg" alt="Profile Picture" class="max-w-[10rem] h-auto rounded-full" width="1165" height="1165">
     <p class="max-w-prose">
       Highly motivated and analytical computer engineering student with a focus on software development, game
       design, and web technologies. Experienced with a variety of programming languages and tools and always willing

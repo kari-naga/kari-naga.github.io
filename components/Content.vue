@@ -1,9 +1,15 @@
 <script setup lang="ts">
-  defineProps(['title'])
+  defineProps({
+    'title': String,
+    'gap': {
+      type: Boolean,
+      default: true,
+    },
+  })
 </script>
 
 <template>
-  <main class="py-4 px-7 flex flex-col items-center gap-4 text-center">
+  <main class="py-4 px-7 flex flex-col items-center text-center" :class="{ 'gap-4': gap, 'gap-2': !gap }">
     <h1 class="text-3xl font-semibold tracking-wide">
       {{ title }}
     </h1>

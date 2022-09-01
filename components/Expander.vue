@@ -11,6 +11,10 @@
       type: Number,
       default: 0,
     },
+    'bg': {
+      type: String,
+      default: '',
+    }
   })
   const emit = defineEmits(['open', 'close'])
   const buttonClass = computed(() => {
@@ -43,7 +47,7 @@
 </script>
 
 <template>
-  <div>
+  <div :class="`py-2 px-4 rounded-2xl transition-colors duration-300 ${show ? bg : ''}`">
     <div :class="headerClass">
       <slot name="header" />
       <IconButton title="Toggle Details" class="flex justify-center items-center gap-1" :class="dropdownClass" @click="toggleShow">
