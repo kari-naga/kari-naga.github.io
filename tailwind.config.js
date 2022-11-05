@@ -8,6 +8,7 @@ module.exports = {
       'montserrat': ['MontserratVariable', 'Montserrat', ...defaultTheme.fontFamily.sans],
     },
   },
+  darkMode: 'class',
   plugins: [
     require('@tailwindcss/typography'),
   ],

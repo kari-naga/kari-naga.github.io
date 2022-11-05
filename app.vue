@@ -6,6 +6,9 @@
     htmlAttrs: {
       lang: 'en',
     },
+    bodyAttrs: {
+      class: 'font-montserrat dark:bg-black dark:text-white',
+    },
     meta: [
       {
         name: 'description',
@@ -36,10 +39,8 @@
 </script>
 
 <template>
-  <div class="font-montserrat">
-    <NuxtLoadingIndicator />
-    <Header @set-height="height => pageStyle.marginTop = height + 'px'" />
-    <NuxtPage v-if="ready" :style="pageStyle" />
-    <Footer @set-height="height => pageStyle.marginBottom = height + 'px'" />
-  </div>
+  <NuxtLoadingIndicator />
+  <Header @set-height="(height: number) => pageStyle.marginTop = height + 'px'" />
+  <NuxtPage v-if="ready" :style="pageStyle" />
+  <Footer @set-height="(height: number) => pageStyle.marginBottom = height + 'px'" />
 </template>

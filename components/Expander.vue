@@ -14,7 +14,7 @@
     'bg': {
       type: String,
       default: '',
-    }
+    },
   })
   const emit = defineEmits(['open', 'close'])
   const buttonClass = computed(() => {
@@ -25,11 +25,11 @@
     }
   })
   const show = ref(false)
-  const content = ref(null)
+  const content = ref<HTMLElement | null>(null)
   const height = ref(0)
   onMounted(() => setTimeout(() => {
-    height.value = content.value.clientHeight
-  }, 210))
+    height.value = content.value!.clientHeight
+  }, 300))
   function toggleShow() {
     show.value = !show.value
     if (show.value) {
@@ -54,6 +54,7 @@
         <slot name="label" />
         <i-bi-caret-down class="transition-transform duration-300" :class="buttonClass" />
       </IconButton>
+      <slot name="description" />
     </div>
     <div class="transition-all duration-300 overflow-hidden" :class="{ 'opacity-0': !show }" :style="style">
       <div :class="contentClass" ref="content">
