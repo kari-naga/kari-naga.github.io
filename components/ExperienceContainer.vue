@@ -31,9 +31,9 @@
     @close="message = 'Show More'"
   >
     <template #header>
-      <Link :to="to" class="text-xl">
+      <NuxtLink :to="to" class="text-xl">
         {{ title }}
-      </Link>
+      </NuxtLink>
       <div class="my-1 w-48 [&>img]:w-full [&>img]:h-auto">
         <slot name="image" />
       </div>

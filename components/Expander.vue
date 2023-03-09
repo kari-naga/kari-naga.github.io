@@ -36,11 +36,23 @@
   const show = ref(false)
   const content = ref<HTMLElement | null>(null)
   const height = ref(0)
-  onMounted(() =>
+  function resizeHandler() {
+    const newHeight = content.value!.clientHeight ?? 0
+    if (show.value) {
+      emit('close', height.value)
+      emit('open', newHeight)
+    }
+    height.value = newHeight - props.heightMod
+  }
+  onMounted(() => {
     setTimeout(() => {
-      height.value = content.value!.clientHeight
+      height.value = content.value!.clientHeight ?? 0
     }, 300)
-  )
+    window.addEventListener('resize', resizeHandler)
+  })
+  onUnmounted(() => {
+    window.removeEventListener('resize', resizeHandler)
+  })
   function toggleShow() {
     show.value = !show.value
     if (show.value) {
