@@ -1,13 +1,18 @@
 <script setup lang="ts">
-  defineProps(['on', 'onClick'])
+  const props = defineProps({ on: Boolean })
+  defineEmits(['clicked'])
+  const toggled = ref(props.on)
+  onMounted(() => {
+    toggled.value = props.on
+  })
 </script>
 
 <template>
   <label class="switch">
-    <input type="checkbox" v-model="on" @click="onClick" />
+    <input v-model="toggled" aria-label="Toggle Theme" type="checkbox" @click="$emit('clicked')" />
     <span class="slider round">
-      <i-bi-moon class="absolute top-[8px] left-[8px]" />
-      <i-bi-sun class="absolute top-[8px] right-[8px]" />
+      <Icon name="bi:moon" class="absolute top-[8px] left-[8px]" />
+      <Icon name="bi:sun" class="absolute top-[8px] right-[8px]" />
     </span>
   </label>
 </template>
@@ -35,14 +40,14 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(209 213 219);
+    background-color: rgb(203 213 225 / 1);
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
 
   .slider:before {
     position: absolute;
-    content: "";
+    content: '';
     height: 26px;
     width: 26px;
     left: 4px;
@@ -54,11 +59,11 @@
   }
 
   input:checked + .slider {
-    background-color: rgb(59 130 246);
+    background-color: rgb(29 78 216 / 1);
   }
 
   input:focus + .slider {
-    box-shadow: 0 0 1px rgb(59 130 246);
+    box-shadow: 0 0 1px rgb(29 78 216 / 1);
   }
 
   input:checked + .slider:before {

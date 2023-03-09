@@ -1,6 +1,23 @@
 <script setup lang="ts">
-  defineProps(['title', 'position', 'to', 'bg'])
-  const message = ref("Show More")
+  defineProps({
+    title: {
+      type: String,
+      required: true,
+    },
+    position: {
+      type: String,
+      required: true,
+    },
+    to: {
+      type: String,
+      required: true,
+    },
+    bg: {
+      type: String,
+      default: '',
+    },
+  })
+  const message = ref('Show More')
 </script>
 
 <template>
@@ -13,7 +30,7 @@
     @open="message = 'Show Less'"
     @close="message = 'Show More'"
   >
-    <template v-slot:header>
+    <template #header>
       <Link :to="to" class="text-xl">
         {{ title }}
       </Link>
@@ -24,10 +41,10 @@
         {{ position }}
       </p>
     </template>
-    <template v-slot:label>
+    <template #label>
       <p class="font-medium">{{ message }}</p>
     </template>
-    <template v-slot:content>
+    <template #content>
       <slot />
     </template>
   </Expander>

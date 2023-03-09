@@ -12,7 +12,7 @@
     meta: [
       {
         name: 'description',
-        content: 'Kari Naga\'s Portfolio',
+        content: "Kari Naga's Portfolio",
       },
     ],
     script: [
@@ -21,10 +21,11 @@
         async: true,
       },
       {
-        children: 'window.dataLayer = window.dataLayer || [];\n' +
-                  'function gtag(){dataLayer.push(arguments);}\n' +
-                  'gtag(\'js\', new Date());\n' +
-                  'gtag(\'config\', \'G-HDM3HDL28B\');',
+        children:
+          'window.dataLayer = window.dataLayer || [];\n' +
+          'function gtag(){dataLayer.push(arguments);}\n' +
+          "gtag('js', new Date());\n" +
+          "gtag('config', 'G-HDM3HDL28B');",
       },
     ],
   })
@@ -39,7 +40,7 @@
 </script>
 
 <template>
-  <NuxtLoadingIndicator />
+  <NuxtLoadingIndicator :throttle="0" color="repeating-linear-gradient(to right,#5433FF 0%,#20BDFF 50%,#A5FECB 100%)" />
   <Header @set-height="(height: number) => pageStyle.marginTop = height + 'px'" />
   <NuxtPage v-if="ready" :style="pageStyle" />
   <Footer @set-height="(height: number) => pageStyle.marginBottom = height + 'px'" />

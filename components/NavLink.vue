@@ -1,5 +1,10 @@
 <script setup lang="ts">
-  defineProps(['to'])
+  defineProps({
+    to: {
+      type: String,
+      required: true,
+    },
+  })
 </script>
 
 <template>

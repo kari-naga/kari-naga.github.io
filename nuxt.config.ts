@@ -1,34 +1,14 @@
-import { defineNuxtConfig } from 'nuxt/config'
-import Icons from 'unplugin-icons/vite'
-import IconsResolver from 'unplugin-icons/resolver'
-import Components from 'unplugin-vue-components/vite'
-
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  typescript: {
-    shim: false,
+  modules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', 'nuxt-icon'],
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
   },
-  vite: {
-    plugins: [
-      Components({
-        resolvers: [
-          IconsResolver(),
-        ],
-      }),
-      Icons({
-        autoInstall: true
-      }),
-    ],
+  eslint: {
+    lintOnStart: false,
   },
-  modules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode',
-  ],
   colorMode: {
     classSuffix: '',
   },
-  css: [
-    '@fontsource/montserrat/variable.css',
-    '@fontsource/montserrat/variable-italic.css',
-  ],
+  css: ['@fontsource/montserrat/variable.css', '@fontsource/montserrat/variable-italic.css'],
 })

@@ -1,34 +1,29 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev -o",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "genpreview": "nuxt generate && nuxt preview",
+    "build": "nuxi build",
+    "dev": "nuxi dev -o",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "genpreview": "nuxi generate && nuxi preview",
     "lint": "eslint --ext .js,.ts --ignore-path .eslintignore .",
     "upload": "gh-pages -d dist --dotfiles",
-    "deploy": "nuxt generate && gh-pages -d dist --dotfiles"
+    "deploy": "nuxi generate && gh-pages -d dist --dotfiles"
   },
   "devDependencies": {
-    "@fontsource/montserrat": "^4.5.13",
-    "@iconify-json/bi": "^1.1.10",
-    "@iconify-json/logos": "^1.1.18",
-    "@iconify-json/simple-icons": "^1.1.33",
-    "@nuxtjs/color-mode": "^3.1.8",
-    "@nuxtjs/tailwindcss": "^6.1.3",
-    "@tailwindcss/typography": "^0.5.7",
-    "@typescript-eslint/eslint-plugin": "^5.42.0",
-    "@typescript-eslint/parser": "^5.42.0",
-    "@vue/eslint-config-standard": "^8.0.1",
-    "eslint": "^8.26.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-nuxt": "^3.2.0",
+    "@fontsource/montserrat": "^4.5.14",
+    "@nuxtjs/color-mode": "^3.2.0",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@nuxtjs/eslint-module": "^4.0.1",
+    "@nuxtjs/tailwindcss": "^6.4.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.7.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-vue": "^9.7.0",
     "gh-pages": "^4.0.0",
-    "nuxt": "^3.0.0-rc.13",
-    "unplugin-icons": "^0.14.13",
-    "unplugin-vue-components": "^0.21.2"
+    "nuxt": "^3.2.3",
+    "nuxt-icon": "^0.3.2",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
   }
 }

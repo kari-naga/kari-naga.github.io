@@ -1,7 +1,10 @@
 <script setup lang="ts">
   defineProps({
-    'title': String,
-    'gap': {
+    title: {
+      type: String,
+      required: true,
+    },
+    gap: {
       type: Boolean,
       default: true,
     },
