@@ -11,7 +11,7 @@ module.exports = {
       },
       keyframes: {
         text: {
-          '0%': {
+          '0%, 100%': {
             'background-size': '200% 200%',
             'background-position': 'left top',
           },
