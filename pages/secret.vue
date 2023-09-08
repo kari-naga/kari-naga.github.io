@@ -21,7 +21,7 @@
           XD jkjk hope you have a great year and here's to year 9! - Kari
         </p>
         <p>Happy birthday Josh! Personal message forthcoming when I'm not sitting in a career fair meeting! - Vance</p>
-        <p>Justin sez hbd! - Justin</p>
+        <p>Justin sez hbd - Justin</p>
         <p>Happy birthday Josh! - Jai</p>
         <p>Happy birthday Josh! - Joseph</p>
       </div>
