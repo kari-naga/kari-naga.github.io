@@ -5,7 +5,31 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        text: 'text 5s ease infinite',
+      },
+      keyframes: {
+        text: {
+          '0%': {
+            'background-size': '200% 200%',
+            'background-position': 'left top',
+          },
+          '25%': {
+            'background-size': '200% 200%',
+            'background-position': 'right top',
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right bottom',
+          },
+          '75%': {
+            'background-size': '200% 200%',
+            'background-position': 'left bottom',
+          },
+        },
+      },
+    },
     fontFamily: {
       montserrat: ['MontserratVariable', 'Montserrat', ...defaultTheme.fontFamily.sans],
     },
