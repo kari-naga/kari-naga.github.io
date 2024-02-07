@@ -14,6 +14,40 @@
       bg="bg-slate-100 dark:bg-zinc-900"
     >
       <template #label>
+        <h2 class="text-xl">Metroid</h2>
+      </template>
+      <template #description>
+        <p class="font-light">A faithful recreation of Metroid made in Unity</p>
+      </template>
+      <template #content>
+        <p>
+          I worked with a partner to build a faithful recreation of the classic NES game Metroid. I specifically built
+          out the player movement systems, the animation system, the room transitions and door effects, the camera
+          controller, and the custom laser beam weapon. You can play it
+          <NavLink to="https://linkstorm.itch.io/metroid" class="underline">here</NavLink>!
+        </p>
+        <TechDisplay>
+          <Icon name="logos:unity" class="dark:bg-white dark:p-1 dark:rounded-xl dark:overflow-visible" />
+          <Icon name="logos:c-sharp" />
+          <Icon name="logos:git" class="dark:bg-white dark:p-1 dark:rounded-xl dark:overflow-visible" />
+          <Icon name="logos:jira" />
+        </TechDisplay>
+        <img
+          src="~/assets/img/metroid.png"
+          alt="Metroid Recreation Screenshot"
+          class="w-full h-auto my-2 shadow-md"
+          width="800"
+          height="748"
+        />
+      </template>
+    </Expander>
+    <Expander
+      header-class="flex flex-col items-center"
+      content-class="pt-2 flex flex-col items-center gap-2 max-w-prose"
+      button-style="90"
+      bg="bg-slate-100 dark:bg-zinc-900"
+    >
+      <template #label>
         <h2 class="text-xl">Synthszr</h2>
       </template>
       <template #description>
