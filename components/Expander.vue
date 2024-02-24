@@ -70,7 +70,7 @@
 </script>
 
 <template>
-  <div :class="`py-2 px-4 rounded-2xl transition-colors duration-300 ${show ? bg : ''}`">
+  <div :class="`pt-3 pb-2 px-4 rounded-2xl transition-colors duration-300 ${show ? bg : ''}`">
     <div :class="headerClass">
       <slot name="header" />
       <IconButton
@@ -85,7 +85,7 @@
       <slot name="description" />
     </div>
     <div class="transition-all duration-300 overflow-hidden" :class="{ 'opacity-0': !show }" :style="style">
-      <div ref="content" :class="contentClass">
+      <div ref="content" class="[&>p]:px-1" :class="contentClass">
         <slot name="content" />
       </div>
     </div>

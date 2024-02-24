@@ -14,6 +14,41 @@
       bg="bg-slate-100 dark:bg-zinc-900"
     >
       <template #label>
+        <h2 class="text-xl">Skyward Counter</h2>
+      </template>
+      <template #description>
+        <p class="font-light">A bullet hell prototype with a unique twist</p>
+      </template>
+      <template #content>
+        <p>
+          I built a prototype for a bullet hell game with a unique parrying mechanic in just a few weeks. In Skyward
+          Counter, the only way to deal damage to the enemy is to parry their projectiles just before they hit you,
+          making for a high-risk, high-reward, adrenaline-filled game. The game design, UI, and mechanics are completely
+          bespoke, and I hope to eventually replace the assets with custom ones. You can play the game
+          <NavLink to="https://linkstorm.itch.io/skyward-counter" class="underline">here</NavLink>!
+        </p>
+        <TechDisplay>
+          <Icon name="logos:unity" class="dark:bg-white dark:p-1 dark:rounded-xl dark:overflow-visible" />
+          <Icon name="logos:c-sharp" />
+          <Icon name="logos:git" class="dark:bg-white dark:p-1 dark:rounded-xl dark:overflow-visible" />
+          <Icon name="logos:jira" />
+        </TechDisplay>
+        <img
+          src="~/assets/img/skyward-counter.png"
+          alt="Metroid Recreation Screenshot"
+          class="w-full h-auto my-2 shadow-md"
+          width="2560"
+          height="1440"
+        />
+      </template>
+    </Expander>
+    <Expander
+      header-class="flex flex-col items-center"
+      content-class="pt-2 flex flex-col items-center gap-2 max-w-prose"
+      button-style="90"
+      bg="bg-slate-100 dark:bg-zinc-900"
+    >
+      <template #label>
         <h2 class="text-xl">Metroid</h2>
       </template>
       <template #description>
@@ -76,7 +111,7 @@
     </Expander>
     <Expander
       header-class="flex flex-col items-center"
-      content-class="pt-2 flex flex-col items-center gap-2 max-w-prose"
+      content-class="pt-2 flex flex-col items-center gap-2 max-w-prose pb-2"
       button-style="90"
       bg="bg-slate-100 dark:bg-zinc-900"
     >
@@ -102,7 +137,7 @@
     </Expander>
     <Expander
       header-class="flex flex-col items-center"
-      content-class="pt-2 flex flex-col items-center gap-2 max-w-prose"
+      content-class="pt-2 flex flex-col items-center gap-2 max-w-prose pb-2"
       button-style="90"
       bg="bg-slate-100 dark:bg-zinc-900"
     >
