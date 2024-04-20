@@ -10,7 +10,7 @@
 <template>
   <div class="flex flex-col items-center gap-2 max-w-prose" :class="wrapperClass">
     <h3 class="font-medium">Technologies Used</h3>
-    <div class="flex items-center gap-4 text-4xl">
+    <div class="flex items-center justify-center gap-4 text-4xl flex-wrap">
       <slot />
     </div>
   </div>

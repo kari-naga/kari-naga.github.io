@@ -7,6 +7,7 @@
 
 <template>
   <Content :title="title" :gap="false">
+    <h2 class="text-2xl font-medium pt-4">Work Experience</h2>
     <ExperienceContainer
       title="Capital One"
       position="Software Engineer Intern"
@@ -156,6 +157,7 @@
         </template>
       </Expander>
     </ExperienceContainer>
+    <h2 class="text-2xl font-medium pt-4">Leadership Experience</h2>
     <ExperienceContainer
       title="University of Michigan Autonomous Robotic Vehicle"
       position="Sensors Lead"
