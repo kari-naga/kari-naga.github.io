@@ -8,6 +8,44 @@
 <template>
   <Content :title="title" :gap="false">
     <Expander
+      header-class="flex flex-col items-center"
+      content-class="pt-2 flex flex-col items-center gap-2 max-w-prose"
+      button-style="90"
+      bg="bg-slate-100 dark:bg-zinc-900"
+    >
+      <template #label>
+        <h2 class="text-xl">Hand of Light</h2>
+      </template>
+      <template #description>
+        <p class="font-light">A unit-focused RTS game with a blend of futuristic and medieval warfare</p>
+      </template>
+      <template #content>
+        <p>
+          I worked with a team to make Hand of Light, a unit focused indie-RTS set in a futuristic time where people use
+          weapons similar to those of medieval warfare. In the game, players lead their armies through enemy territory,
+          fight off enemy raids, and engage in massive strategic battles as they struggle against the malevolent
+          Selenian forces. I worked on the UI, controls, music, and level design for the game. You can play and/or
+          download Hand of Light on
+          <NavLink to="https://linkstorm.itch.io/hand-of-light" class="underline">itch.io</NavLink> or
+          <NavLink to="https://gamejolt.com/games/hand-of-light/891599" class="underline">Game Jolt</NavLink>!
+        </p>
+        <TechDisplay>
+          <Icon name="logos:unity" class="dark:bg-white dark:p-1 dark:rounded-xl dark:overflow-visible" />
+          <Icon name="logos:c-sharp" />
+          <Icon name="logos:git" class="dark:bg-white dark:p-1 dark:rounded-xl dark:overflow-visible" />
+          <Icon name="logos:jira" />
+          <Icon name="fad:logo-cubase" class="ml-[-0.5rem] text-5xl" />
+        </TechDisplay>
+        <img
+          src="~/assets/img/hand-of-light.png"
+          alt="Hand of Light Splash Image"
+          class="w-full h-auto my-2 shadow-md"
+          width="2137"
+          height="1202"
+        />
+      </template>
+    </Expander>
+    <Expander
       header-class="flex flex-col items-center mi"
       content-class="pt-2 flex flex-col items-center gap-2 max-w-prose"
       button-style="90"
