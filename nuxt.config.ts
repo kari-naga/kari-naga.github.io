@@ -1,14 +1,13 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', 'nuxt-icon'],
-  // app: {
-  //   pageTransition: { name: 'page', mode: 'out-in' },
-  // },
-  eslint: {
-    lintOnStart: false,
-  },
+  compatibilityDate: '2024-04-03',
+  devtools: { enabled: true },
+  modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxt/icon'],
   colorMode: {
     classSuffix: '',
   },
-  css: ['@fontsource/montserrat/variable.css', '@fontsource/montserrat/variable-italic.css'],
+  icon: {
+    mode: "svg",
+  },
+  css: ['@fontsource-variable/montserrat/wght.css', '@fontsource-variable/montserrat/wght-italic.css'],
 })

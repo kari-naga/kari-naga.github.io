@@ -1,4 +1,5 @@
 {
+  "name": "knga-personal-site",
   "private": true,
   "scripts": {
     "build": "nuxi build",
@@ -6,25 +7,30 @@
     "generate": "nuxi generate",
     "preview": "nuxi preview",
     "genpreview": "nuxi generate && nuxi preview",
-    "lint": "eslint --ext .js,.ts --ignore-path .eslintignore .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "upload": "gh-pages -d dist --dotfiles",
     "deploy": "nuxi generate && gh-pages -d dist --dotfiles"
   },
   "devDependencies": {
-    "@fontsource/montserrat": "^4.5.14",
-    "@nuxtjs/color-mode": "^3.4.0",
-    "@nuxtjs/eslint-config-typescript": "^12.1.0",
-    "@nuxtjs/eslint-module": "^4.1.0",
-    "@nuxtjs/tailwindcss": "^6.12.0",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
-    "eslint": "^8.57.0",
-    "eslint-config-prettier": "^8.10.0",
-    "eslint-plugin-prettier": "^4.2.1",
+    "@fontsource-variable/montserrat": "^5.0.19",
+    "@iconify-json/bi": "^1.1.24",
+    "@iconify-json/devicon": "^1.1.50",
+    "@iconify-json/fad": "^1.1.10",
+    "@iconify-json/logos": "^1.1.44",
+    "@iconify-json/simple-icons": "^1.1.113",
+    "@nuxt/eslint": "^0.5.0",
+    "@nuxt/icon": "^1.4.5",
+    "@nuxtjs/color-mode": "^3.4.2",
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@typescript-eslint/eslint-plugin": "^8.1.0",
+    "@typescript-eslint/parser": "^8.1.0",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "gh-pages": "^6.1.1",
-    "nuxt": "^3.11.2",
-    "nuxt-icon": "^0.3.3",
-    "prettier": "^2.8.8",
-    "typescript": "^4.9.5"
+    "nuxt": "^3.12.4",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
   }
 }

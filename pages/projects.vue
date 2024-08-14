@@ -30,7 +30,7 @@
           <NavLink to="https://gamejolt.com/games/hand-of-light/891599" class="underline">Game Jolt</NavLink>!
         </p>
         <TechDisplay>
-          <Icon name="logos:unity" class="dark:bg-white dark:p-1 dark:rounded-xl dark:overflow-visible" />
+          <Icon name="logos:unity" class="dark:bg-white dark:p-1 dark:pr-2 dark:rounded-xl dark:overflow-visible" />
           <Icon name="logos:c-sharp" />
           <Icon name="logos:git" class="dark:bg-white dark:p-1 dark:rounded-xl dark:overflow-visible" />
           <Icon name="logos:jira" />
@@ -42,7 +42,7 @@
           class="w-full h-auto my-2 shadow-md"
           width="2137"
           height="1202"
-        />
+        >
       </template>
     </Expander>
     <Expander
@@ -69,8 +69,8 @@
           <Icon name="logos:c-plusplus" />
           <Icon name="logos:lua" class="dark:bg-white dark:p-1 dark:rounded-xl dark:overflow-visible" />
           <p class="text-xl">Lua<span class="font-extralight">Bridge</span></p>
-          <img src="~/assets/img/box2d.svg" alt="Box2D logo" class="h-6" />
-          <img src="~/assets/img/glm.png" alt="GLM logo" width="360" height="198" class="w-auto h-6" />
+          <img src="~/assets/img/box2d.svg" alt="Box2D logo" class="h-6" >
+          <img src="~/assets/img/glm.png" alt="GLM logo" width="360" height="198" class="w-auto h-6" >
           <Icon name="devicon:sdl" class="dark:bg-white dark:p-1 dark:rounded-xl dark:overflow-visible" />
           <img
             src="~/assets/img/rapidjson.png"
@@ -78,7 +78,7 @@
             width="250"
             height="52"
             class="w-auto h-6 dark:h-8 dark:bg-white dark:p-2 dark:rounded-xl dark:overflow-visible"
-          />
+          >
           <Icon name="logos:git" class="dark:bg-white dark:p-1 dark:rounded-xl dark:overflow-visible" />
         </TechDisplay>
         <iframe
@@ -91,7 +91,7 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
-        ></iframe>
+        />
       </template>
     </Expander>
     <Expander
@@ -126,7 +126,7 @@
           class="w-full h-auto my-2 shadow-md"
           width="2560"
           height="1440"
-        />
+        >
       </template>
     </Expander>
     <Expander
@@ -160,7 +160,7 @@
           class="w-full h-auto my-2 shadow-md"
           width="800"
           height="748"
-        />
+        >
       </template>
     </Expander>
     <Expander
@@ -193,7 +193,7 @@
           class="w-full h-auto my-2 shadow-md"
           width="1171"
           height="454"
-        />
+        >
       </template>
     </Expander>
     <Expander

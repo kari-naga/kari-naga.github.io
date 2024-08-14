@@ -33,15 +33,11 @@
     marginTop: '0px',
     marginBottom: '0px',
   })
-  const ready = ref(false)
-  onMounted(() => {
-    ready.value = true
-  })
 </script>
 
 <template>
   <NuxtLoadingIndicator :throttle="0" color="repeating-linear-gradient(to right,#5433FF 0%,#20BDFF 50%,#A5FECB 100%)" />
   <Header @set-height="(height: number) => pageStyle.marginTop = height + 'px'" />
-  <NuxtPage v-if="ready" :style="pageStyle" />
+  <NuxtPage :style="pageStyle" />
   <Footer @set-height="(height: number) => pageStyle.marginBottom = height + 'px'" />
 </template>
